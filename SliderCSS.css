@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body{
+    padding: 10px;
+    background: #111111;
+}
+
+.imageDiv{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+}
+
+.imageDiv img{
+    width: 720px;
+    height: 480px;
+    display: block;
+}
+
+.prev{
+    left: -70px;
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.5s, color 0.2s;
+}
+
+.next{
+    right: -70px;
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.5s, color 0.2s;
+}
+
+.prev:active{
+    color: aqua;
+}
+
+.next:active{
+    color: aqua;
+}
+
+.gallery{
+    width: 720px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.gallery ul{
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 500ms;
+}
+
+.gallery li{
+    display: inline-block;
+}
+
+#SliderText{
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 162, 255);
+    text-shadow: 0 0 30px #0084ff;
+    font-size: 55px;
+    margin-top: 5%;
+    margin-left: 12cm;   
+}
+#by{
+    position: fixed;
+    top: 1%;
+    left: 33%;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 162, 255);
+    text-shadow: 0 0 30px #0084ff;
+}
